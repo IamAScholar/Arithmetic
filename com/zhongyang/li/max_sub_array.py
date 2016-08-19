@@ -52,11 +52,11 @@ def max_sub_array(a,left,right):
 if __name__ == "__main__":
     # print ('This is Hello world!!')
     #print random.randint(-15, 15)
-   # num=getNumber(20)
-    num=[8, 15, 11, -5, -14, -14, -15, 3, 10, 0, 0, 4, -14, 12, -5, -14, 10, 7, -12, -4]
+    num=getNumber(30)
+   # num=[8, 15, 11, -5, -14, -14, -15, 3, 10, 0, 0, 4, -14, 12, -5, -14, 10, 7, -12, -4]
     print num
 #     left_max_sum=-sys.maxint
 #     print type(left_max_sum)
-    print max_sub_array(num,0,20-1)
+    print max_sub_array(num,0,len(num)-1)
 
    
