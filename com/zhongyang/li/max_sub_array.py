@@ -30,7 +30,6 @@ def max_cross_mid(a,mid,left,right):
     max_sum=left_max_sum+right_max_sum
     return (max_sum,left_max,right_max)
 def max_sub_array(a,left,right):
-    #print a
     if(right==left):
         return (a[right],left,right)
     mid=(left+right)/2
