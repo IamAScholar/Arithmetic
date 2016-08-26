@@ -4,16 +4,12 @@ Created on 2016年8月17日
 
 @author: Administrator
 '''
-import random
+
 import array
 import sys
+import util
 
 
-def getNumber(length):
-    a = [1]*length
-    for i in range(0, length) :
-        a[i] = random.randint(-15, 15)
-    return a
 def max_cross_mid(a,mid,left,right):
     left_max_sum=-sys.maxint
     left_max=0
@@ -52,7 +48,7 @@ def max_sub_array(a,left,right):
 if __name__ == "__main__":
     # print ('This is Hello world!!')
     #print random.randint(-15, 15)
-    num=getNumber(30)
+    num=util.getNumber(30)
    # num=[8, 15, 11, -5, -14, -14, -15, 3, 10, 0, 0, 4, -14, 12, -5, -14, 10, 7, -12, -4]
     print num
 #     left_max_sum=-sys.maxint
